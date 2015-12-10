@@ -1,0 +1,68 @@
+.calculator {
+    width: 320px;
+    text-align: center;
+    margin: 40px auto;
+    border: 1px solid black;
+    border-radius: 10px 10%;
+    padding-left: 20px;
+    background-color: aqua;
+    font-family: sans-serif;
+}
+
+.display {
+    height: 60px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: auto;
+    background-color: beige;
+    font-size: 50px;
+    overflow: hidden;
+
+}
+
+
+
+.button {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    margin: 0px 20px 20px 0px;
+    border: 1px solid black;
+    border-bottom: 4px solid black;
+    border-radius: 25%;
+    background-image: linear-gradient(to right bottom, black, white 150%);
+    cursor: pointer;
+}
+
+.btn-wide {
+    width: 120px;
+}
+
+.button:active {
+    background-image: linear-gradient(to right bottom, black, white 180%);
+    border-bottom: 1px solid black;
+}
+
+.button:active > .btn-caption {
+
+    transform: rotateX(15deg);
+}
+
+.btn-caption {
+    margin: auto;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black;
+}
+
+.row > div {
+
+}
