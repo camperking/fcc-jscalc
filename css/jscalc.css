@@ -3,11 +3,16 @@
     text-align: center;
     margin: 40px auto;
     padding-top: 10px;
-    border: 1px solid black;
     border-radius: 10px 10%;
-    background-color: aqua;
-    font-family: sans-serif;
-    box-shadow: inset 0 0 10px black;
+    background-color: hsl(209, 80%, 90%);
+    background-image: linear-gradient(to top, hsl(209, 80%, 80%), hsl(209, 80%, 90%));
+    box-shadow: 0px 2px 2px hsl(209, 80%, 70%),
+                0px 5px 1px hsl(209, 80%, 50%),
+                10px 20px 15px hsl(0, 0%, 40%);
+    font-family: "Indie Flower";
+    font-size: 25px;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
 }
 
 .display {
@@ -24,7 +29,7 @@
     background-color: beige;
     font-size: 50px;
     overflow: hidden;
-    box-shadow: 0 0 10px black;
+    box-shadow: inset 0 3px 10px black;
 }
 
 .row {
@@ -37,9 +42,9 @@
     display: inline-flex;
     margin: 0px 20px 20px 0px;
     border: 1px solid black;
-    border-bottom: 4px solid black;
-    border-radius: 25%;
-    background-image: linear-gradient(to right bottom, black, white 150%);
+    border-radius: 16px;
+    background-image: linear-gradient(to top, hsl(29, 59%, 50%), hsl(29, 59%, 90%));
+    box-shadow: inset 0px -2px 1px hsla(0, 0%, 0%, 0.5);
     cursor: pointer;
 }
 
@@ -48,8 +53,8 @@
 }
 
 .button:active {
-    background-image: linear-gradient(to right bottom, black, white 180%);
-    border-bottom: 1px solid black;
+    background-image: linear-gradient(to top, hsl(29, 59%, 45%), hsl(29, 59%, 85%) 180%);
+    box-shadow: inset 0px 1px 1px hsla(0, 0%, 0%, 0.5);
 }
 
 .button:active > .btn-caption {
@@ -58,12 +63,11 @@
 }
 
 .btn-caption {
+    font-family: sans-serif;
     margin: auto;
-
     font-size: 20px;
     font-weight: bold;
     color: white;
-    text-shadow: 0px 2px black, 2px 0px black, 0px -2px black, -2px 0px black;
 }
 
 .row > div {
